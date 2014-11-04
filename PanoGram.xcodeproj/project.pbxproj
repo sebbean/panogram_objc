@@ -15,6 +15,8 @@
 		96C64F0C1A08535600456074 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96C64F0B1A08535600456074 /* Images.xcassets */; };
 		96C64F0F1A08535600456074 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96C64F0D1A08535600456074 /* LaunchScreen.xib */; };
 		96C64F1B1A08535600456074 /* PanoGramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C64F1A1A08535600456074 /* PanoGramTests.m */; };
+		96DF26C21A08543B00C98DC5 /* FeedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DF26C11A08543B00C98DC5 /* FeedManager.m */; };
+		B99222F5AD551620A4141C73 /* libPods-PanoGram.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83DDDC9D30FBB53E1C0F16F /* libPods-PanoGram.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		93A939DEB25C2F287139C6AD /* Pods-PanoGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PanoGram.release.xcconfig"; path = "Pods/Target Support Files/Pods-PanoGram/Pods-PanoGram.release.xcconfig"; sourceTree = "<group>"; };
 		96C64EF81A08535600456074 /* PanoGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanoGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C64EFC1A08535600456074 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96C64EFD1A08535600456074 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +45,10 @@
 		96C64F141A08535600456074 /* PanoGramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PanoGramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C64F191A08535600456074 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96C64F1A1A08535600456074 /* PanoGramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PanoGramTests.m; sourceTree = "<group>"; };
+		96DF26C01A08543B00C98DC5 /* FeedManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedManager.h; sourceTree = "<group>"; };
+		96DF26C11A08543B00C98DC5 /* FeedManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedManager.m; sourceTree = "<group>"; };
+		B83DDDC9D30FBB53E1C0F16F /* libPods-PanoGram.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PanoGram.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFB9D6CD456FA0541C0A2511 /* Pods-PanoGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PanoGram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PanoGram/Pods-PanoGram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B99222F5AD551620A4141C73 /* libPods-PanoGram.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +70,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		470810B111437B30C757B06F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFB9D6CD456FA0541C0A2511 /* Pods-PanoGram.debug.xcconfig */,
+				93A939DEB25C2F287139C6AD /* Pods-PanoGram.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7968718BA3ECE0BE329A1F76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B83DDDC9D30FBB53E1C0F16F /* libPods-PanoGram.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		96C64EEF1A08535600456074 = {
 			isa = PBXGroup;
 			children = (
 				96C64EFA1A08535600456074 /* PanoGram */,
 				96C64F171A08535600456074 /* PanoGramTests */,
 				96C64EF91A08535600456074 /* Products */,
+				470810B111437B30C757B06F /* Pods */,
+				7968718BA3ECE0BE329A1F76 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +119,8 @@
 				96C64F0D1A08535600456074 /* LaunchScreen.xib */,
 				96C64F021A08535600456074 /* PanoGram.xcdatamodeld */,
 				96C64EFB1A08535600456074 /* Supporting Files */,
+				96DF26C01A08543B00C98DC5 /* FeedManager.h */,
+				96DF26C11A08543B00C98DC5 /* FeedManager.m */,
 			);
 			path = PanoGram;
 			sourceTree = "<group>";
@@ -129,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96C64F1E1A08535600456074 /* Build configuration list for PBXNativeTarget "PanoGram" */;
 			buildPhases = (
+				D237691B6C622FD436AB09CE /* Check Pods Manifest.lock */,
 				96C64EF41A08535600456074 /* Sources */,
 				96C64EF51A08535600456074 /* Frameworks */,
 				96C64EF61A08535600456074 /* Resources */,
+				92AF847FCFD23437843B534A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,6 +248,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		92AF847FCFD23437843B534A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PanoGram/Pods-PanoGram-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D237691B6C622FD436AB09CE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		96C64EF41A08535600456074 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -226,6 +290,7 @@
 				96C64EFE1A08535600456074 /* main.m in Sources */,
 				96C64F071A08535600456074 /* ViewController.m in Sources */,
 				96C64F041A08535600456074 /* PanoGram.xcdatamodeld in Sources */,
+				96DF26C21A08543B00C98DC5 /* FeedManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +412,7 @@
 		};
 		96C64F1F1A08535600456074 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFB9D6CD456FA0541C0A2511 /* Pods-PanoGram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PanoGram/Info.plist;
@@ -357,6 +423,7 @@
 		};
 		96C64F201A08535600456074 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93A939DEB25C2F287139C6AD /* Pods-PanoGram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PanoGram/Info.plist;
@@ -418,6 +485,7 @@
 				96C64F201A08535600456074 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96C64F211A08535600456074 /* Build configuration list for PBXNativeTarget "PanoGramTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +494,7 @@
 				96C64F231A08535600456074 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
